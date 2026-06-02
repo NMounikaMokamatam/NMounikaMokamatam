@@ -68,7 +68,7 @@ A battle-tested CI/CD pipeline where no image touches production unless it passe
 Production-grade AWS infrastructure modules — EKS cluster, VPC, IAM roles, RDS, and S3 with remote state. Modular, reusable, environment-aware.
 
 ### ☸️ [k8s-platform](https://github.com/NMounikaMokamatam/k8s-platform)
-Kubernetes manifests and Helm charts for deploying microservices with a full observability stack (Prometheus + Grafana). Includes HPA, PodDisruptionBudgets, and namespace isolation.
+Kubernetes manifests and Helm charts for deploying microservices with a full observability stack. Includes HPA, PodDisruptionBudgets, and namespace isolation.
 
 ### 🔄 [cicd-templates](https://github.com/NMounikaMokamatam/cicd-templates)
 GitLab CI and Jenkins pipeline templates with automated gating, API reliability testing, and environment promotion.
@@ -90,6 +90,7 @@ IaC security scanning with Checkov, secrets rotation with AWS Secrets Manager, t
 ---
 
 ## 🏆 Certifications & Awards
+
 - 🏅 AWS Certified Solutions Architect – Associate
 - ☸️ Certified Kubernetes Administrator (CKA)
 - ⭐ Spot Award for Pipeline Automation — Cisco, 2024
@@ -97,8 +98,4 @@ IaC security scanning with Checkov, secrets rotation with AWS Secrets Manager, t
 
 ---
 
-## 📈 GitHub Stats
-
-![Mounika's GitHub stats](https://github-readme-stats.vercel.app/api?username=NMounikaMokamatam&show_icons=true&theme=dark&hide_border=true)
-
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=NMounikaMokamatam&layout=compact&theme=dark&hide_border=true)
+*Every project here reflects real production patterns used by engineering teams at scale.*

@@ -3,7 +3,7 @@
 **DevOps / DevSecOps Engineer** | San Jose, CA  
 5+ years owning production Kubernetes (EKS) infrastructure across AWS, Azure, and GCP.
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=flat&logo=linkedin)](https://linkedin.com/in/NMounikaMokamatam)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=flat&logo=linkedin)](https://www.linkedin.com/in/mounika-m-47808336b/)
 [![Portfolio](https://img.shields.io/badge/Portfolio-Visit-green?style=flat)](https://nmounikamokamatam.github.io/mounika-portfolio/)
 [![AWS](https://img.shields.io/badge/AWS-Solutions_Architect-orange?style=flat&logo=amazon-aws)](https://aws.amazon.com/certification/)
 [![CKA](https://img.shields.io/badge/Kubernetes-CKA_Certified-blue?style=flat&logo=kubernetes)](https://www.cncf.io/certification/cka/)
@@ -25,6 +25,34 @@
 ---
 
 ## 📁 Featured Repositories
+
+### 🚀 [eks-3tier-app](https://github.com/NMounikaMokamatam/eks-3tier-app)
+Production-ready 3-tier application (frontend + backend + PostgreSQL) on Amazon EKS with full GitOps deployment.
+- Multi-stage Dockerfiles with non-root users and healthchecks
+- EKS cluster provisioned with Terraform across 3 availability zones
+- ArgoCD auto-syncs from Git with self-heal and pruning
+- GitHub Actions pipeline: test, scan, build, push, deploy
+- Prometheus and Grafana monitoring with Slack alerting
+
+`Docker` `Kubernetes` `Terraform` `ArgoCD` `GitHub Actions` `Prometheus` `AWS EKS`
+
+### ⚡ [auto-healing-infra](https://github.com/NMounikaMokamatam/auto-healing-infra)
+Self-healing AWS infrastructure that automatically detects and recovers from EC2 failures without human intervention.
+- CloudWatch alarms trigger on CPU over 80% and failed status checks
+- Python 3.12 Lambda stops and restarts the affected EC2 instance
+- SNS fan-out invokes Lambda and Slack simultaneously
+- Full infrastructure in Terraform including VPC, IAM, and dashboards
+
+`Python` `AWS Lambda` `CloudWatch` `SNS` `EC2` `Terraform` `Slack`
+
+### 🔐 [secure-gitops-pipeline](https://github.com/NMounikaMokamatam/secure-gitops-pipeline)
+A battle-tested CI/CD pipeline where no image touches production unless it passes security scanning and no secret ever lives in code.
+- Trivy blocks CRITICAL and HIGH CVEs before image reaches ECR
+- HashiCorp Vault injects secrets at runtime via agent sidecar
+- ArgoCD only deploys Trivy-verified images from ECR
+- Pods run as non-root with readOnlyRootFilesystem
+
+`Trivy` `HashiCorp Vault` `ArgoCD` `ECR` `EKS` `Terraform` `GitHub Actions`
 
 ### 🏗️ [aws-terraform-infra](https://github.com/NMounikaMokamatam/aws-terraform-infra)
 Production-grade AWS infrastructure modules — EKS cluster, VPC, IAM roles, RDS, and S3 with remote state. Modular, reusable, environment-aware.

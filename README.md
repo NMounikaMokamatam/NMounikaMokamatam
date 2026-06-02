@@ -1,19 +1,34 @@
-# Hi, I'm Mounika 👋
+# Hi, I'm Mounika Mokamatam 👋
 
-> DevOps Engineer passionate about building secure, scalable, and self-healing cloud infrastructure.
+**DevOps / DevSecOps Engineer** | San Jose, CA  
+5+ years owning production Kubernetes (EKS) infrastructure across AWS, Azure, and GCP.
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?style=flat&logo=linkedin)](https://www.linkedin.com/in/mounika-m-47808336b/)
+[![Portfolio](https://img.shields.io/badge/Portfolio-Visit-green?style=flat)](https://nmounikamokamatam.github.io/mounika-portfolio/)
+[![AWS](https://img.shields.io/badge/AWS-Solutions_Architect-orange?style=flat&logo=amazon-aws)](https://aws.amazon.com/certification/)
+[![CKA](https://img.shields.io/badge/Kubernetes-CKA_Certified-blue?style=flat&logo=kubernetes)](https://www.cncf.io/certification/cka/)
 
 ---
 
-## 🛠️ What I Build
+## 🔧 What I Build
 
-I design and deploy production-grade infrastructure on AWS using modern DevOps practices — infrastructure as code, GitOps, container orchestration, and security-first CI/CD pipelines.
+| Area | Tools |
+|---|---|
+| Cloud Infrastructure | AWS (EKS, EC2, IAM, RDS, S3), Azure, GCP |
+| Infrastructure as Code | Terraform, Ansible, CloudFormation |
+| Containers & Orchestration | Kubernetes, Docker, Helm |
+| CI/CD & Automation | GitHub Actions, GitLab CI, Jenkins, Azure DevOps, GitOps |
+| Observability | Prometheus, Grafana, ELK Stack, Kibana |
+| Streaming & Data | Kafka, Spark Streaming, Flink, Airflow |
+| Security | Trivy, HashiCorp Vault, IaC scanning, token-based access |
+| Languages | Python, Bash, PowerShell, HCL |
 
 ---
 
-## 🚀 Featured Projects
+## 📁 Featured Projects
 
-### 🚀 [Deploy 3-Tier App on EKS](https://github.com/NMounikaMokamatam/eks-3tier-app)
-Production-ready 3-tier application (frontend + backend + PostgreSQL) running on Amazon EKS with full GitOps deployment.
+### 🚀 [eks-3tier-app](https://github.com/NMounikaMokamatam/eks-3tier-app)
+Production-ready 3-tier application (frontend + backend + PostgreSQL) on Amazon EKS with full GitOps deployment.
 - Multi-stage Dockerfiles with non-root users and healthchecks
 - EKS cluster provisioned with Terraform across 3 availability zones
 - ArgoCD auto-syncs from Git with self-heal and pruning
@@ -25,51 +40,60 @@ Production-ready 3-tier application (frontend + backend + PostgreSQL) running on
 
 ---
 
-### ⚡ [Auto-Healing Infrastructure](https://github.com/NMounikaMokamatam/auto-healing-infra)
+### ⚡ [auto-healing-infra](https://github.com/NMounikaMokamatam/auto-healing-infra)
 Self-healing AWS infrastructure that automatically detects and recovers from EC2 failures without human intervention.
-- CloudWatch alarms trigger on CPU over 80 percent and failed status checks
+- CloudWatch alarms trigger on CPU over 80% and failed status checks
 - SNS fan-out invokes Lambda and Slack simultaneously
 - Python 3.12 Lambda stops and restarts the affected EC2 instance
-- Formatted Slack alert sent with instance ID, alarm name, and timestamp
+- Formatted Slack alert with instance ID, alarm name, and timestamp
 - Full infrastructure in Terraform including VPC, IAM, and dashboards
-- GitHub Actions deploys on merge with Terraform plan posted to PRs
 
 `Python` `AWS Lambda` `CloudWatch` `SNS` `EC2` `Terraform` `Slack` `GitHub Actions`
 
 ---
 
-### 🔐 [Secure GitOps Pipeline](https://github.com/NMounikaMokamatam/secure-gitops-pipeline)
+### 🔐 [secure-gitops-pipeline](https://github.com/NMounikaMokamatam/secure-gitops-pipeline)
 A battle-tested CI/CD pipeline where no image touches production unless it passes security scanning and no secret ever lives in code.
 - Trivy blocks CRITICAL and HIGH CVEs before image reaches ECR
 - HashiCorp Vault injects secrets at runtime via agent sidecar
 - ArgoCD only deploys Trivy-verified images from ECR
 - ECR uses immutable image tags and lifecycle policies
 - Pods run as non-root with readOnlyRootFilesystem
-- PR gate runs Trivy filesystem scan and Terraform validate
 
 `Trivy` `HashiCorp Vault` `ArgoCD` `ECR` `EKS` `Terraform` `GitHub Actions` `Security`
 
 ---
 
-## 🧰 Tech Stack
+### 🏗️ [aws-terraform-infra](https://github.com/NMounikaMokamatam/aws-terraform-infra)
+Production-grade AWS infrastructure modules — EKS cluster, VPC, IAM roles, RDS, and S3 with remote state. Modular, reusable, environment-aware.
 
-**Cloud**
-AWS EKS, EC2, ECR, Lambda, CloudWatch, SNS, VPC, IAM, S3
+### ☸️ [k8s-platform](https://github.com/NMounikaMokamatam/k8s-platform)
+Kubernetes manifests and Helm charts for deploying microservices with a full observability stack (Prometheus + Grafana). Includes HPA, PodDisruptionBudgets, and namespace isolation.
 
-**Infrastructure as Code**
-Terraform, Helm
+### 🔄 [cicd-templates](https://github.com/NMounikaMokamatam/cicd-templates)
+GitLab CI and Jenkins pipeline templates with automated gating, API reliability testing, and environment promotion.
 
-**Containers and Orchestration**
-Docker, Kubernetes, ArgoCD, Helm
+### 🐍 [devops-automation](https://github.com/NMounikaMokamatam/devops-automation)
+Python scripts for operational tasks — Kubernetes node health checks, AWS cost reporting, alert deduplication. Reduced repetitive ops work by ~50% in production use.
 
-**CI/CD and Security**
-GitHub Actions, Trivy, HashiCorp Vault
+### 🔒 [devsecops-toolkit](https://github.com/NMounikaMokamatam/devsecops-toolkit)
+IaC security scanning with Checkov, secrets rotation with AWS Secrets Manager, token-based API access controls. Security built into the pipeline, not bolted on.
 
-**Languages**
-Python, Bash, HCL, YAML
+---
 
-**Monitoring**
-Prometheus, Grafana, CloudWatch, Slack
+## 📊 Experience Highlights
+
+- **Cisco Systems** (Feb 2024 – Present) — Built observability stack cutting on-call alerts 40%+; owns 10+ CI/CD pipelines serving 2–3 engineering teams
+- **Magna International** (Apr 2023 – Jan 2024) — Rebuilt CI/CD cutting deploy time 70% (2hr → 35min)
+- **IIC Software Services** (Feb 2019 – Jul 2021) — Built Kafka/Spark/Flink pipelines processing millions of events/sec
+
+---
+
+## 🏆 Certifications & Awards
+- 🏅 AWS Certified Solutions Architect – Associate
+- ☸️ Certified Kubernetes Administrator (CKA)
+- ⭐ Spot Award for Pipeline Automation — Cisco, 2024
+- 🎓 Academic Excellence — SUNY New Paltz, 2023
 
 ---
 
@@ -78,14 +102,3 @@ Prometheus, Grafana, CloudWatch, Slack
 ![Mounika's GitHub stats](https://github-readme-stats.vercel.app/api?username=NMounikaMokamatam&show_icons=true&theme=dark&hide_border=true)
 
 ![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=NMounikaMokamatam&layout=compact&theme=dark&hide_border=true)
-
----
-
-## 📫 Let's Connect
-
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-blue?logo=linkedin)](https://linkedin.com/in/YOUR_LINKEDIN)
-[![GitHub](https://img.shields.io/badge/GitHub-Follow-black?logo=github)](https://github.com/NMounikaMokamatam)
-
----
-
-*Every project here reflects real production patterns used by engineering teams at scale.*
